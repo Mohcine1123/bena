@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Benet Wahren | Bir El Djir, Oran</title>
+  <meta name="description" content="Contactez le restaurant Benet Wahren à Bouchikhi, Bir El Djir, Oran. Téléphone : +213 550 474 849. Ouvert tous les jours de 12h à minuit."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">Benet Wahren</span>
+    <span class="nav-logo-sub">Restaurant Oranais</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À Propos</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="reservation.html" class="nav-cta">Réserver</a></li>
+  </ul>
+  <div class="hamburger" role="button" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1920&q=80');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-tag">Nous Trouver</span>
+    <h1 class="section-title">Nous <em>Contacter</em></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>›</span>
+      <span>Contact</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+  <!-- INFO -->
+  <div class="reveal-left">
+    <h2 class="form-title">Informations<br/><em style="font-style:italic;color:var(--or);">& Localisation</em></h2>
+    <p class="form-subtitle">Nous sommes là pour vous accueillir</p>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📍</div>
+      <div class="contact-detail-text">
+        <strong>Adresse</strong>
+        <p>Bouchikhi, Bir El Djir<br/>Oran, Algérie</p>
+      </div>
+    </div>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📞</div>
+      <div class="contact-detail-text">
+        <strong>Téléphone</strong>
+        <p><a href="tel:+213550474849" style="color:var(--gris-light);transition:color 0.3s;" onmouseover="this.style.color='var(--or)'" onmouseout="this.style.color='var(--gris-light)'">+213 550 474 849</a></p>
+      </div>
+    </div>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon">🕐</div>
+      <div class="contact-detail-text">
+        <strong>Horaires d'Ouverture</strong>
+        <p>Tous les jours<br/>12:00 – 00:00 (Minuit)</p>
+      </div>
+    </div>
+
+    <div class="contact-detail" style="border:none;margin:0;padding:0;">
+      <div class="contact-detail-icon">🌐</div>
+      <div class="contact-detail-text">
+        <strong>Réseaux Sociaux</strong>
+        <p>Suivez-nous sur
+          <a href="#" style="color:var(--or);"> Facebook</a> et
+          <a href="#" style="color:var(--or);"> Instagram</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="map-container" style="margin-top:2.5rem;">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=0.5400,35.7000,0.5700,35.7200&layer=mapnik&marker=35.7100,0.5550"
+        width="100%"
+        height="280"
+        frameborder="0"
+        loading="lazy"
+        title="Carte Benet Wahren - Bouchikhi, Bir El Djir, Oran"
+        style="border:none;border-radius:4px;">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="contact-form-wrap reveal-right">
+    <h2 class="form-title">Envoyez-nous<br/><em style="font-style:italic;color:var(--or);">un Message</em></h2>
+    <p class="form-subtitle">Nous vous répondrons dans les plus brefs délais</p>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="c-nom">Votre Nom</label>
+          <input type="text" id="c-nom" name="nom" placeholder="Ahmed Benali" required/>
+        </div>
+        <div class="form-group">
+          <label for="c-tel">Téléphone</label>
+          <input type="tel" id="c-tel" name="tel" placeholder="+213 5XX XXX XXX"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" placeholder="votre@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="c-sujet">Sujet</label>
+        <select id="c-sujet" name="sujet">
+          <option value="">Choisir un sujet</option>
+          <option>Réservation de groupe</option>
+          <option>Question sur le menu</option>
+          <option>Événement privé</option>
+          <option>Partenariat</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="c-message">Votre Message</label>
+        <textarea id="c-message" name="message" placeholder="Votre message ici..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+        Envoyer le Message ✦
+      </button>
+      <div class="form-success">
+        ✓ Votre message a été envoyé avec succès. Nous vous répondrons très bientôt !
+      </div>
+    </form>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem;">
+        <span class="nav-logo-main">Benet Wahren</span>
+        <span class="nav-logo-sub">Restaurant Oranais</span>
+      </div>
+      <p>Un restaurant authentique dédié aux saveurs de la cuisine algérienne et oranaise.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">◈</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Notre Menu</h4>
+      <ul>
+        <li><a href="menu.html">Entrées</a></li>
+        <li><a href="menu.html">Tajines</a></li>
+        <li><a href="menu.html">Couscous</a></li>
+        <li><a href="menu.html">Grillades</a></li>
+        <li><a href="menu.html">Desserts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📍</span>
+        <span>Bouchikhi, Bir El Djir, Oran</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📞</span>
+        <span>+213 550 474 849</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">🕐</span>
+        <span>12:00 – 00:00 · Tous les jours</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 <span>Benet Wahren</span>. Tous droits réservés.</p>
+    <p>Bouchikhi, Bir El Djir, Oran, Algérie</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

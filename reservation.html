@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Réservation — Benet Wahren | Restaurant Traditionnel Oranais</title>
+  <meta name="description" content="Réservez votre table au restaurant Benet Wahren à Bir El Djir, Oran. Cuisine algérienne authentique. Ouvert 12h–00h. Tél: +213 550 474 849."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <style>
+    .reservation-section { padding: 7rem 2rem; }
+    .res-hero-features {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+    .res-feature {
+      text-align: center;
+    }
+    .res-feature-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .res-feature-text {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gris);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">Benet Wahren</span>
+    <span class="nav-logo-sub">Restaurant Oranais</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À Propos</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="reservation.html" class="nav-cta active">Réserver</a></li>
+  </ul>
+  <div class="hamburger" role="button" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-tag">Votre Table Vous Attend</span>
+    <h1 class="section-title">Faire une <em>Réservation</em></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>›</span>
+      <span>Réservation</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION FEATURES -->
+<div class="res-hero-features reveal">
+  <div class="res-feature">
+    <div class="res-feature-icon">🕐</div>
+    <div class="res-feature-text">Ouvert 12:00 – 00:00</div>
+  </div>
+  <div class="res-feature">
+    <div class="res-feature-icon">📞</div>
+    <div class="res-feature-text">+213 550 474 849</div>
+  </div>
+  <div class="res-feature">
+    <div class="res-feature-icon">📍</div>
+    <div class="res-feature-text">Bouchikhi, Bir El Djir, Oran</div>
+  </div>
+  <div class="res-feature">
+    <div class="res-feature-icon">✦</div>
+    <div class="res-feature-text">Tous les jours</div>
+  </div>
+</div>
+
+<!-- RESERVATION FORM -->
+<section class="reservation-section">
+  <div class="reservation-box reveal">
+    <div class="reservation-intro">
+      <span class="section-tag">Réservez Maintenant</span>
+      <h2 class="section-title">Votre Table <em>Idéale</em></h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line reverse"></div>
+      </div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--gris);font-style:italic;margin-top:1rem;">
+        Remplissez le formulaire ci-dessous pour réserver votre table. Nous vous confirmerons votre réservation par téléphone.
+      </p>
+    </div>
+
+    <form class="reservation-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-nom">Nom Complet <span style="color:var(--or);">*</span></label>
+          <input type="text" id="r-nom" name="nom" placeholder="Votre nom et prénom" required/>
+        </div>
+        <div class="form-group">
+          <label for="r-prenom">Prénom</label>
+          <input type="text" id="r-prenom" name="prenom" placeholder="Votre prénom"/>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-tel">Téléphone <span style="color:var(--or);">*</span></label>
+          <input type="tel" id="r-tel" name="tel" placeholder="+213 5XX XXX XXX" required/>
+        </div>
+        <div class="form-group">
+          <label for="r-email">Email</label>
+          <input type="email" id="r-email" name="email" placeholder="votre@email.com"/>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-date">Date <span style="color:var(--or);">*</span></label>
+          <input type="date" id="r-date" name="date" required/>
+        </div>
+        <div class="form-group">
+          <label for="r-heure">Heure <span style="color:var(--or);">*</span></label>
+          <select id="r-heure" name="heure" required>
+            <option value="">Choisir une heure</option>
+            <option>12:00</option>
+            <option>12:30</option>
+            <option>13:00</option>
+            <option>13:30</option>
+            <option>14:00</option>
+            <option>14:30</option>
+            <option>15:00</option>
+            <option>19:00</option>
+            <option>19:30</option>
+            <option>20:00</option>
+            <option>20:30</option>
+            <option>21:00</option>
+            <option>21:30</option>
+            <option>22:00</option>
+            <option>22:30</option>
+            <option>23:00</option>
+            <option>23:30</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-personnes">Nombre de Personnes <span style="color:var(--or);">*</span></label>
+          <select id="r-personnes" name="personnes" required>
+            <option value="">Nombre de convives</option>
+            <option>1 personne</option>
+            <option>2 personnes</option>
+            <option>3 personnes</option>
+            <option>4 personnes</option>
+            <option>5 personnes</option>
+            <option>6 personnes</option>
+            <option>7–10 personnes</option>
+            <option>Plus de 10 personnes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="r-occasion">Occasion</label>
+          <select id="r-occasion" name="occasion">
+            <option value="">Type d'occasion</option>
+            <option>Repas en famille</option>
+            <option>Déjeuner d'affaires</option>
+            <option>Anniversaire</option>
+            <option>Mariage / Fiançailles</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="r-notes">Demandes Spéciales</label>
+        <textarea id="r-notes" name="notes" placeholder="Allergies alimentaires, préférences de table, demandes particulières..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1.2rem;font-size:0.85rem;">
+        Confirmer Ma Réservation ✦
+      </button>
+
+      <div class="form-success">
+        ✓ Votre demande de réservation a été enregistrée ! Nous vous contacterons très bientôt pour confirmer votre table.
+      </div>
+    </form>
+
+    <p class="reservation-note">
+      Besoin d'une réservation immédiate ? Appelez-nous directement au
+      <a href="tel:+213550474849">+213 550 474 849</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem;">
+        <span class="nav-logo-main">Benet Wahren</span>
+        <span class="nav-logo-sub">Restaurant Oranais</span>
+      </div>
+      <p>Un restaurant authentique dédié aux saveurs de la cuisine algérienne et oranaise.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">◈</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Notre Menu</h4>
+      <ul>
+        <li><a href="menu.html">Entrées</a></li>
+        <li><a href="menu.html">Tajines</a></li>
+        <li><a href="menu.html">Couscous</a></li>
+        <li><a href="menu.html">Grillades</a></li>
+        <li><a href="menu.html">Desserts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📍</span>
+        <span>Bouchikhi, Bir El Djir, Oran</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📞</span>
+        <span>+213 550 474 849</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">🕐</span>
+        <span>12:00 – 00:00 · Tous les jours</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 <span>Benet Wahren</span>. Tous droits réservés.</p>
+    <p>Bouchikhi, Bir El Djir, Oran, Algérie</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  // Set min date to today
+  const dateInput = document.getElementById('r-date');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  }
+</script>
+</body>
+</html>
